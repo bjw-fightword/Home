@@ -130,11 +130,13 @@ body {
   margin-bottom: 72px;
   overflow-x: hidden;
   text-align: center;
-  width: 100%; }
+  width: 100%; 
+}
 
 .grid-wrapper {
   margin: 0 auto;
-  position: relative; }
+  position: relative; 
+}
 
 .grid-item {
   display: block;
@@ -144,4 +146,122 @@ body {
   .grid-item img {
     display: block;
     height: auto;
-    width: 100%; }
+    width: 100%; 
+}
+
+/* mysss */
+#controls-top{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 222;
+  background: rgba(0,0,0,0.8);
+}
+#wrapper{
+  margin-top: 72px;
+}
+.control-button{
+  background: none;
+  text-align: center;
+}
+.control-button:hover{
+  background: none;
+}
+.slide a{
+  color: #fff;
+  text-decoration: none;
+
+}
+
+
+#controls-top .control-button{
+    display: inline-block;
+  }
+
+.three_video{
+  width: 100%;
+  height: 300px;
+ text-align: center;
+}
+.three_video>div{
+  display: inline-block;
+  margin: 0 10px;
+}
+.bottom-one{
+  background: rgba(0,0,0,0.8);
+}
+.bottom-one:hover{
+  background: #729a5e;
+}
+.video_one,.video_two,.video_three{
+  position: relative;
+}
+.video_logo{
+  position: absolute;
+  margin: auto;
+  left: 0;
+  top:0;
+  bottom: 0;
+  right: 0;
+  width: 50px;
+}
+
+
+#return-top {
+    width: 45px;
+    height: 45px;
+    background-image: url(../images/new-return-top.png);
+    position: fixed;
+    right: 30px;
+    bottom: 205px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+
+
+
+
+
+@media(max-width: 768px){
+  #controls-top{
+    background-image: url(../images/minnav.png);
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: 90% 16px;
+  }
+  #controls-top .control-button{
+    float: none;
+    display: none;
+  }
+  .one_TITLE{
+    margin-top: 72px;
+  }
+  .five,.four,.six,.seven,.eight,.nine,.twelve,.eleven{
+    display: none;
+  }
+  .slide a{
+    
+    font-size: 20px;
+    
+  }
+  .slide{
+    height: 45px;
+    line-height: 45px;
+  }
+  .three_video{
+    height: 650px;
+    width: 100%;
+  }
+  .control-input{
+    font-size: 12px;
+    width: 66%;
+  }
+  .video_one,.video_two,.video_three{
+    width: 100%;
+    margin: 10px 0 !important;
+  }
+}
