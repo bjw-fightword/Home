@@ -4,7 +4,7 @@ $(function(){
 	})
 })
 /*返回顶部*/
-$(window).scroll(function(){
+/*$(window).scroll(function(){
 	if($(window).scrollTop()>100){
 		$(".return-top").fadeIn();
 	}else{
@@ -14,4 +14,5 @@ $(window).scroll(function(){
 		$("body").animate({scrollTop:0});
 		$(document.documentElement).animate({scrollTop:0});
 	})
-})
+	
+})*/
